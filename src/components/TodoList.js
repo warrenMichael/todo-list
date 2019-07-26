@@ -44,6 +44,7 @@ class TodoList extends React.Component {
       todoItems: newTododArr
     });
     localStorage.setItem("todoItems", JSON.stringify(newTododArr));
+    event.target.querySelector('[name="new-todo"]').value = '';
   }
 
   componentDidMount() {
@@ -100,7 +101,7 @@ class TodoList extends React.Component {
         <ClearAllItems clearAll={this.clearAll} />
         {!this.state.todoItems.length && (
           <p className="no-tasks-text">
-            Currently you have no todo tasks. Add some more or take a breather.
+            Currently you have no to-do tasks. Add some more or take a breather.
           </p>
         )}
         {todoItems.map(item => {

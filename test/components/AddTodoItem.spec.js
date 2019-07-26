@@ -21,7 +21,7 @@ describe("AddTodoItem", function() {
   });
 
   it("renders label text default if not set", function() {
-    expect(component.find(".add-item-label").text()).to.equal("Add TODO item");
+    expect(component.find(".add-item-label").text()).to.equal("Add to-do item");
   });
 
   it("labelText takes prop if set", function() {

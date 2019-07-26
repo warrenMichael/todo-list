@@ -15,7 +15,7 @@ import "../css/components/add-todo-item.css";
  */
 const AddTodoItem = ({
   className = "",
-  labelText = "Add TODO item",
+  labelText = "Add to-do item",
   onSubmitHandler
 }) => {
   return (
