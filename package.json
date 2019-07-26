@@ -2,7 +2,9 @@
   "name": "todo-list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://warrenMichael.github.io/todo-list",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
@@ -30,7 +32,9 @@
     "prettier": "prettier --write 'src/**/*.js' 'test/**/*.js'",
     "test": "NODE_ENV=test mocha --require @babel/register --require ignore-styles mocha.config.js test/**.spec.js  test/**/**.spec.js",
     "tdd": "NODE_ENV=test mocha --require @babel/register --require ignore-styles mocha.config.js test/**.spec.js  test/**/**.spec.js  --watch",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -48,7 +48,7 @@ class TodoList extends React.Component {
   }
 
   componentDidMount() {
-    const todoItems = JSON.parse(localStorage.getItem("todoItems"));
+    const todoItems = JSON.parse(localStorage.getItem("todoItems")) || [];
     this.setState({
       todoItems
     });
