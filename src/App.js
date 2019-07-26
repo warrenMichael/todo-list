@@ -7,7 +7,7 @@ import TodoList from "./components/TodoList.js";
 const App = () => {
   return (
     <div className="todo-list-application">
-      <Header headerText="My TODO List" />
+      <Header headerText="My TO-DO List" />
       <main role="main">
         <TodoList />
       </main>
