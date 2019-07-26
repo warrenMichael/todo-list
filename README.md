@@ -1,3 +1,6 @@
+## View Demo
+At https://warrenmichael.github.io/todo-list
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -24,7 +27,7 @@ Custom script added that runs test in watcher mode
 Custom script added that runs eslint linter
 
 ### `npm run prettier`
-Custom script added that run prettier
+Custom script added that runs prettier
 
 ### `npm run build`
 
