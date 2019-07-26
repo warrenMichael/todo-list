@@ -43,6 +43,15 @@ describe("TodoList", function() {
     expect(component).to.have.tagName("div");
   });
 
+  describe("componentDidMount", function() {
+    it("calls set state with correct expected arguments", function() {
+      instance.clearAll();
+      sinon.assert.calledWith(instance.setState, {
+        todoItems: []
+      });
+    });
+  });
+
   describe("addItem", function() {
     it("prevents event default", function() {
       instance.addItem(event);
